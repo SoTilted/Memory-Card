@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "TextFont";
+  src: url("../assets/Minecraft.ttf") format("truetype");
+  font-style: normal;
+}
+.card {
+    transition: transform ease 0.7s;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 2px 0px 8px rgb(255, 255, 255);
+  }
+  
+  .card:hover {
+    cursor: pointer;
+    transition: transform ease 0.7s;
+    transform: scale(1.1);
+    box-shadow: 2px 0px 12px yellow;
+  }
+  .card img {
+    width: 100%;
+  }
+  
+  .card p {
+    font-family: TextFont;
+    border-top: 2px solid white;
+    font-size: 1.5rem;
+    padding: 10px;
+    letter-spacing: 2px;
+  }
+  

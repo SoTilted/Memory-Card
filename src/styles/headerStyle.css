@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "TitleFont";
+  src: url("../assets/Pokemon-Solid.ttf") format("truetype");
+  font-style: normal;
+}
+
+h1 {
+  margin: 10px;
+  color: yellow;
+  font-family: TitleFont;
+  letter-spacing: 2px;
+  font-size: 50px;
+  text-shadow: -1px 1px 0 blue, 1px 1px 0 blue, 1px -1px 0 blue,
+    -1px -1px 0 blue;
+}
+
+.score > div {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.score > div p {
+  font-family: TextFont;
+  font-size: 2rem;
+  color: white;
+}
+
+h2 {
+  font-family: TextFont;
+  font-weight: 1000;
+  font-size: 2rem;
+}
+.header p {
+  color: rgb(226, 77, 77);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 20px;
+}
+
+.difficulty input {
+  position: absolute;
+  opacity: 0;
+}
+.difficulty input + label {
+  padding: 7px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+}
+.difficulty input:checked + label {
+  background: rgba(255, 217, 0, 0.571);
+  border-radius: 8px;
+}
